@@ -3,10 +3,13 @@ body {
     background-color: aquamarine;
 }
 
-h1 {
+#header {
     font: 32px;
+    padding: 30px;
+    background-color: #c97126;
 }
 
 #instruction {
     background-color: blue;
+    padding: 30px;
 }
