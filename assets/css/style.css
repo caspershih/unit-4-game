@@ -15,6 +15,13 @@ body {
 #instructions {
     background-color: rgb(85, 167, 243);
     padding: 30px;
+    width: 60%;
+}
+
+.wnl {
+    background-color: rgba(170, 127, 209, 0.514);
+    padding: 30px;
+    width: 60%;
 }
 
 img {
