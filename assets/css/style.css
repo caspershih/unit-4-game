@@ -5,14 +5,15 @@ body {
 
 #header {
     font: 32px;
-    padding: 30px;
+    color: aliceblue;
+    padding: 15px;
     background-color: #c97126;
     width: 25%;
     text-align: center;
 }
 
-#instruction {
-    background-color: blue;
+#instructions {
+    background-color: rgb(85, 167, 243);
     padding: 30px;
 }
 
