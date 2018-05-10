@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>unit-4-game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<script>
+
+// array of gems//
+
+    var gems = ["ruby", "sapphire", "emerald", "topaz"];
+
+//for loop of gems//
+
+    for (i = 0; i <gems.length; i++) {
+        text += gem[i]
+    };
+
+// This function will randomly generate number of gems at the start of a game //
+
+
+// Click gem images to increase the gem count//
+
+    $
+
+// When the gems player collected matches the randomly generated gem count, the player wins the game//
+
+
+// If the total gem count excess the ramdon gem numbe, the player lose//
+
+
+// As soon as the player wins the game, start a new one//
+
+
+</script>
 </head>
 <body>
     
@@ -21,24 +56,29 @@
         <p>Each time when the game starts, the game will change the values of each crystal.</p>
     </div>
 
-<!--This indicates the total number of gems-->
+<!--Indicator that randomly generate number of gems-->
     <div>
 
     </div>
 
 <!--Wins and loses-->
     <div>
-
+    <P>Wins: </P>
+    <p>Loses: </p>
     </div>
 
 <!--This is where the gems are-->
-    <div>
-
-
+    <div class="gemImages">
+        <img id="ruby" src="assets/images/ruby.jpg">
+        <img id="sapphire" src="assets/images/sapphire.jpg">
+        <img id="emerald" src="assets/images/emerald.jpg">
+        <img id="topaz" src="assets/images/topaz.jpg">
     </div>
 
 <!--This part indicates the player's score-->
     <div>
+
+        <p>Your total score is: </p>
 
     </div>
     

@@ -7,9 +7,15 @@ body {
     font: 32px;
     padding: 30px;
     background-color: #c97126;
+    width: 25%;
+    text-align: center;
 }
 
 #instruction {
     background-color: blue;
     padding: 30px;
+}
+
+img {
+    margin: 10px;
 }
