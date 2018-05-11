@@ -10,7 +10,13 @@
 
 <script>
 
-// array of gems//
+// wins and loses = wnl
+
+    var wins = 0;
+    var loses = 0;
+
+
+// array of gems
 
     var gems = ["ruby", "sapphire", "emerald", "topaz"];
 
@@ -40,9 +46,13 @@
 
 // Click this button to clear the gems player added
 
+    $('body').on(click, "#clear", function(){
+        $("display").empty();
+    })
+
 // This function will randomly generate number of gems at the start of a game
 
-    var numGems = ["10", "100"];
+    Math.floor(Math.random()*100) +1;
 
 // When the gems player collected matches the randomly generated gem count, the player wins the game
 
@@ -51,7 +61,9 @@
 // If the total gem count excess the ramdon gem numbe, the player lose
 
 
+
 // As soon as the player wins the game, start a new one
+
 
 
 </script>
@@ -83,9 +95,15 @@
     </div>
 
 <!--Player gem count-->
-    <div>
-        
+    <div class=wnl>
+        Your gems
     </div>
+
+<!--A button that player can clear gems-->
+
+<div>
+    <button>Reset Gems</button>
+</div>
 
 <!--This is where the gems are-->
     <div class="gemImages">
