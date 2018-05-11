@@ -17,24 +17,41 @@
 //for loop of gems//
 
     for (i = 0; i <gems.length; i++) {
-        text += gem[i]
+    
+// Click gem images to increase the gem count
+
+    var gemBtn = $("<gems>");
+
+    gemBtn.addClass("ruby sapphire emerald topaz");
+
+    gemBtn.attr('data-gems', gems[i]);
+
+    gemBtn.text(gems[i]);
+
+    $("gems").append(gemBtn);
+
     };
 
-// This function will randomly generate number of gems at the start of a game //
+// On click event to the gems
+
+    $('body').on("click", ".gem-button", function(){
+        var 
+    })
+
+// Click this button to clear the gems player added
+
+// This function will randomly generate number of gems at the start of a game
+
+    var numGems = ["10", "100"];
+
+// When the gems player collected matches the randomly generated gem count, the player wins the game
 
 
-// Click gem images to increase the gem count//
 
-    $
-
-// When the gems player collected matches the randomly generated gem count, the player wins the game//
-
-    
-
-// If the total gem count excess the ramdon gem numbe, the player lose//
+// If the total gem count excess the ramdon gem numbe, the player lose
 
 
-// As soon as the player wins the game, start a new one//
+// As soon as the player wins the game, start a new one
 
 
 </script>
