@@ -10,17 +10,17 @@
 
 <script>
 
-// wins and loses = wnl
+// wins and loses
 
     var wins = 0;
     var loses = 0;
 
 
-// array of gems
+// Array of gems
 
     var gems = ["ruby", "sapphire", "emerald", "topaz"];
 
-//for loop of gems//
+// for loop of gems
 
     for (i = 0; i <gems.length; i++) {
     
@@ -30,13 +30,17 @@
 
     gemBtn.addClass("ruby sapphire emerald topaz");
 
-    gemBtn.attr('data-gems', gems[i]);
+    gemBtn.attr('gems', gems[i]);
 
     gemBtn.text(gems[i]);
 
     $("gems").append(gemBtn);
 
     };
+
+// Every game, the gems need to be random as well
+
+
 
 // On click event to the gems
 
@@ -52,20 +56,32 @@
 
 // This function will randomly generate number of gems at the start of a game
 
-    Math.floor(Math.random()*100) +1;
+    function generate(){
+        var x = document.getElementById("generate")
+        x.innerHTML = Math.floor(Math.random()*100) +1;
+    };
+
+    console.log();
 
 // When the gems player collected matches the randomly generated gem count, the player wins the game
-
-    
-
 // If the total gem count excess the ramdon gem numbe, the player lose
 
+if (player){
+
+win++
+};
+
+if (player){
+
+lose++
+};
 
 
 // As soon as the player wins the game, start a new one
 
 
 // And the total score goes up by one
+
 
 
 
@@ -91,25 +107,30 @@
     
     </div>
 
-<!--Wins and loses-->
-    <div class=wnl>
-    <P>Wins: </P>
-    <p>Loses: </p>
-    </div>
+<!--wins and loses-->
+
+<div class="wnl">
+    <p>Win: </p>
+    <p>Lose: </p>
+</div>
+
+<!--Button taht gnnerates a random number of gems between 1 to 100-->
+
+<button id="generate">Generate</button>
 
 <!--Player gem count-->
-    <div class=wnl>
-        Your gems: 
+    <div class="reset">
+        <p>Gems: </p> 
     </div>
 
 <!--A button that player can clear gems-->
 
 <div>
-    <button id="reset">Reset Gems</button>
+    <button class="reset">Reset Gems</button>
 </div>
 
 <!--This is where the gems are-->
-    <div class="gemImages">
+    <div class="gems">
         <img id="ruby" src="assets/images/ruby.jpg">
         <img id="sapphire" src="assets/images/sapphire.jpg">
         <img id="emerald" src="assets/images/emerald.jpg">
