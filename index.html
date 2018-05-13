@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>unit-4-game</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+    crossorigin="anonymous"></script>
 <script>
 
 // wins and loses
 
     var wins = 0;
     var loses = 0;
-
 
 // Array of gems
 
@@ -38,7 +37,7 @@
 
     };
 
-// Every game, the gems need to be random as well
+// Every game, random number of gems will be assigned
 
 
 
@@ -76,15 +75,6 @@ if (player){
 lose++
 };
 
-
-// As soon as the player wins the game, start a new one
-
-
-// And the total score goes up by one
-
-
-
-
 </script>
 </head>
 <body>
@@ -102,11 +92,6 @@ lose++
         <p>Each time when the game starts, the game will change the values of each crystal.</p>
     </div>
 
-<!--Indicator that randomly generate number of gems-->
-    <div>
-    
-    </div>
-
 <!--wins and loses-->
 
 <div class="wnl">
@@ -114,20 +99,16 @@ lose++
     <p>Lose: </p>
 </div>
 
-<!--Button taht gnnerates a random number of gems between 1 to 100-->
+<!--Gem indicators-->
 
-<button id="generate">Generate</button>
+<div class="wnl">
+    <p>Gem given: </p>
+</div>
 
 <!--Player gem count-->
-    <div class="reset">
-        <p>Gems: </p> 
+    <div class="wnl">
+        <p>Gems collected: </p> 
     </div>
-
-<!--A button that player can clear gems-->
-
-<div>
-    <button class="reset">Reset Gems</button>
-</div>
 
 <!--This is where the gems are-->
     <div class="gems">
@@ -137,12 +118,5 @@ lose++
         <img id="topaz" src="assets/images/topaz.jpg">
     </div>
 
-<!--This part indicates the player's score-->
-    <div class=wnl>
-
-        <p>Your total score is: </p>
-
-    </div>
-    
 </body>
 </html>
