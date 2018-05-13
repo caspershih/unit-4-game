@@ -10,10 +10,11 @@
     crossorigin="anonymous"></script>
 <script>
 
-// wins and loses
+// defining varibles
 
     var wins = 0;
     var loses = 0;
+    var goal = Math.floor(Math.random()*100) +10;
 
 // Array of gems
 
@@ -37,39 +38,40 @@
 
     };
 
-// On click event to the gems
-
     $('body').on("click", ".gem-button", function(){
         var 
     })
 
-// Click this button to clear the gems player added
-
-    $('body').on(click, "#clear", function(){
-        $("display").empty();
-    })
-
-// This function will randomly generate number of gems at the start of a game
+// This function will randomly generate number of gems (between 10 to 100) at the start of a game 
 
     function generate(){
         var x = document.getElementById("generate")
-        x.innerHTML = Math.floor(Math.random()*100) +1;
+        x.innerHTML = Math.floor(Math.random()*100) +10;
     };
 
     console.log(generate());
 
 // When the gems player collected matches the randomly generated gem count, the player wins the game
 // If the total gem count excess the ramdon gem numbe, the player lose
+// Upon winning or losing the game, a new game will start automatically
 
-if (player){
+function newGame(){
 
-win++
-};
+}
 
-if (player){
+function win(){
+    alert("GGWP!");
+    wins ++;
+    $("#win").text(win);
+    newGame();
+}
 
-lose++
-};
+function lose(){
+    alert("Sorry, try again!");
+    loses ++;
+    $("#lose").text(lose);
+    newGame();
+}
 
 </script>
 </head>
