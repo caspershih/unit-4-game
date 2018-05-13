@@ -23,7 +23,7 @@
 
     for (i = 0; i <gems.length; i++) {
     
-// Click gem images to increase the gem count
+// Click gem images to increase the gem collected
 
     var gemBtn = $("<gems>");
 
@@ -36,10 +36,6 @@
     $("gems").append(gemBtn);
 
     };
-
-// Every game, random number of gems will be assigned
-
-
 
 // On click event to the gems
 
@@ -60,7 +56,7 @@
         x.innerHTML = Math.floor(Math.random()*100) +1;
     };
 
-    console.log();
+    console.log(generate());
 
 // When the gems player collected matches the randomly generated gem count, the player wins the game
 // If the total gem count excess the ramdon gem numbe, the player lose
@@ -92,13 +88,6 @@ lose++
         <p>Each time when the game starts, the game will change the values of each crystal.</p>
     </div>
 
-<!--wins and loses-->
-
-<div class="wnl">
-    <p>Win: </p>
-    <p>Lose: </p>
-</div>
-
 <!--Gem indicators-->
 
 <div class="wnl">
@@ -109,6 +98,12 @@ lose++
     <div class="wnl">
         <p>Gems collected: </p> 
     </div>
+
+<!--wins and loses-->
+<div class="wnl">
+    <p>Win: </p>
+    <p>Lose: </p>
+</div>
 
 <!--This is where the gems are-->
     <div class="gems">
