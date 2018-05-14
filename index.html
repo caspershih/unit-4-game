@@ -14,15 +14,21 @@
 
     var wins = 0;
     var loses = 0;
-    var goal = Math.floor(Math.random()*100) +10;
+    var goal = Math.floor(Math.random()*100) +20;
 
 // Array of gems
 
     var gems = ["ruby", "sapphire", "emerald", "topaz"];
 
+// Gems
+    var ruby = Math.floor(Math.random()*5) +1;
+    var sapphire = Math.floor(Math.random()*5) +1;
+    var emerald = Math.floor(Math.random()*5) +1;
+    var topaz = Math.floor(Math.random()*5) +1;
+
 // for loop of gems
 
-    for (i = 0; i <gems.length; i++) {
+    for (i = 0; i < gems.length; i++) {
     
 // Click gem images to increase the gem collected
 
@@ -56,7 +62,7 @@
 // Upon winning or losing the game, a new game will start automatically
 
 function newGame(){
-
+    
 }
 
 function win(){
