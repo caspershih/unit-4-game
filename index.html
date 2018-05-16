@@ -37,8 +37,8 @@
 
 <!--wins and loses-->
 <div class="wnl">
-    <p id="win">Win: </p>
-    <p id="lose">Lose: </p>
+    <p id="wins">Wins: </p>
+    <p id="loses">Loses: </p>
 </div>
 
 <!--This is where the gems are-->
@@ -67,6 +67,8 @@
     var sapphire = Math.floor(Math.random()*5) +1;
     var emerald = Math.floor(Math.random()*5) +1;
     var topaz = Math.floor(Math.random()*5) +1;
+
+
         
 // for loop of gems
         
@@ -118,6 +120,50 @@
     $("#lose").text(lose);
     newGame();
     }
+
+    $('#ruby').on('click', function(){
+        gemsCollected = gemsCollected + ruby;
+        $('$Gems Collected').text(gemsCollected);
+        if (gemsCollected === goal){
+            win();
+        }
+        else if (gemsCollected > goal){
+            lose();
+        }
+    });
+
+    $('#sapphire').on('click', function(){
+        gemsCollected = gemsCollected + sapphire;
+        $('$Gems Collected').text(gemsCollected);
+        if (gemsCollected === goal){
+            win();
+        }
+        else if (gemsCollected > goal){
+            lose();
+        }
+    });
+
+    $('#emerald').on('click', function(){
+        gemsCollected = gemsCollected + emerald;
+        $('$Gems Collected').text(gemsCollected);
+        if (gemsCollected === goal){
+            win();
+        }
+        else if (gemsCollected > goal){
+            lose();
+        }
+    });
+
+    $('#topaz').on('click', function(){
+        gemsCollected = gemsCollected + topaz;
+        $('$Gems Collected').text(gemsCollected);
+        if (gemsCollected === goal){
+            win();
+        }
+        else if (gemsCollected > goal){
+            lose();
+        }
+    });
 
 </script>
 </body>
