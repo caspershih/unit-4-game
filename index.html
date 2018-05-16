@@ -27,7 +27,7 @@
 <!--Gem indicators-->
 
 <div class="wnl">
-    <p id="gems">Gems: </p>
+    <p id="gemsGiven">Goal: </p>
 </div>
 
 <!--Player gem count-->
@@ -74,15 +74,15 @@
             
 // Click gem images to increase the gem collected
         
-    var gemBtn = $("<gems>");
+    var gemBtn = $("<gemsGiven>");
         
     gemBtn.addClass("ruby sapphire emerald topaz");
         
-    gemBtn.attr('gems', gems[i]);
+    gemBtn.attr('gemsGiven', gems[i]);
         
     gemBtn.text(gems[i]);
         
-    $("gems").append(gemBtn);
+    $("gemsGiven").append(gemBtn);
         
     };
         
@@ -96,7 +96,7 @@
         
     function newGame(){
         var goal = Math.floor(Math.random()*100) +20;
-        $("#given").text("Gems Given: " + goal);
+        $("#given").text("Goal: " + goal);
         var ruby = Math.floor(Math.random()*5) +1;
         var sapphire = Math.floor(Math.random()*5) +1;
         var emerald = Math.floor(Math.random()*5) +1;
@@ -118,7 +118,7 @@
     $("#lose").text(lose);
     newGame();
     }
-        
+
 </script>
 </body>
 </html>
