@@ -30,3 +30,7 @@ body {
 img {
     margin: 10px;
 }
+
+#images {
+    cursor: pointer;
+}
