@@ -59,10 +59,6 @@
     var restart = 0;
     var gemsCollected = 0;
         
-// Array of gems
-        
-    var gems = ["ruby", "sapphire", "emerald", "topaz"];
-        
 // Defining gems as varibles
     var ruby = Math.floor(Math.random()*5) +1;
     var sapphire = Math.floor(Math.random()*5) +1;
@@ -75,7 +71,7 @@
         
     function newGame(){
         goal = Math.floor(Math.random()*100);
-        $("#goal").text("Goal: " + goal);
+        $("#goal").html("Goal: " + goal);
         ruby = Math.floor(Math.random()*5) +1;
         sapphire = Math.floor(Math.random()*5) +1;
         emerald = Math.floor(Math.random()*5) +1;
@@ -84,21 +80,25 @@
         gemsCollected = 0;
         $("#gemsCollected").text(restart);
     }
-        
+
+    //call the function newGame
+        newGame();
+
     function win(){
         alert("GGWP!");
         wins ++;
-        $("#wins").text(wins);
+        $("#wins").html("Wins: " + wins);
         newGame();
     }
         
     function lose(){
         alert("Sorry, try again!");
         loses ++;
-        $("#loses").text(loses);
+        $("#loses").html("Loses: " + loses);
         newGame();
     }
 
+    //make ruby image into a button
     $('#ruby').on('click', function(){
         gemsCollected = gemsCollected + ruby;
         $('#gemsCollected').text(gemsCollected);
@@ -110,6 +110,7 @@
         }
     });
 
+    //make sapphire image into a button
     $('#sapphire').on('click', function(){
         gemsCollected = gemsCollected + sapphire;
         $('#gemsCollected').text(gemsCollected);
@@ -121,6 +122,7 @@
         }
     });
 
+    //make emerald image into a button
     $('#emerald').on('click', function(){
         gemsCollected = gemsCollected + emerald;
         $('#gemsCollected').text(gemsCollected);
@@ -132,6 +134,7 @@
         }
     });
 
+    //make topaz image into a button
     $('#topaz').on('click', function(){
         gemsCollected = gemsCollected + topaz;
         $('#gemsCollected').text(gemsCollected);
