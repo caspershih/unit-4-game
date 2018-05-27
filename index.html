@@ -55,7 +55,6 @@
     var wins = 0;
     var loses = 0;
     var goal = Math.floor(Math.random()*100);
-    var restart = 0;
     var gemsCollected = 0;
         
 // Defining gems as varibles
@@ -123,14 +122,14 @@
         sapphire = Math.floor(Math.random()*5) +1;
         emerald = Math.floor(Math.random()*5) +1;
         topaz = Math.floor(Math.random()*5) +1;
-        restart = 0;
         gemsCollected = 0;
-        $("#gemsCollected").text(restart);
     }
 
-//call the function newGame
+// call the function newGame
     newGame();
 
+
+// the winning function
     function win(){
         alert("GGWP!");
         wins ++;
@@ -138,6 +137,7 @@
         newGame();
     }
         
+// the losing function
     function lose(){
         alert("Sorry, try again!");
         loses ++;
