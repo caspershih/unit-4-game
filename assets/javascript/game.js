@@ -1,7 +1,7 @@
 // defining varibles
 var wins = 0;
 var loses = 0;
-var goal = Math.floor(Math.random()*100);
+var goal = Math.floor(Math.random()*100) +10;
 var gemsCollected = 0;
     
 // Defining gems as varibles
